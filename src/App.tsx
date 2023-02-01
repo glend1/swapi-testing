@@ -9,8 +9,12 @@ function App() {
             .then((res) => res.json())
             .then((json) => setName(json.name))
     }, [])
-
-    return <h1>{name}</h1>
+    return (
+        <>
+            <h1>Who is in star wars?</h1>
+            <h2>{name}</h2>
+        </>
+    )
 }
 
 export default App
